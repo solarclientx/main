@@ -515,7 +515,7 @@ footer{
     <div class="nav-links">
       <a href="#features">Features</a>
       <a href="#modules">Modules</a>
-      <a href="#download">Download</a>
+      <a href="#purchase">Get Access</a>
       <button class="btn btn-ghost" onclick="openPreview()"><i class="fas fa-eye"></i>Preview GUI</button>
     </div>
     <a href="https://discord.gg/kJrQWEkueT" target="_blank" class="btn btn-discord"><i class="fab fa-discord"></i>Discord</a>
@@ -530,7 +530,7 @@ footer{
     <h1 class="hero-title g-text">Solar Client</h1>
     <p class="hero-sub">The ultimate premium utility mod for Donut SMP. 77+ modules — Stun Slam, Crystal Macro, Base Finder, Auto-Sniping, and more.</p>
     <div class="hero-actions">
-      <button class="btn btn-primary" onclick="downloadClient()"><i class="fas fa-download"></i>Download</button>
+      <a href="https://novaclientx.mysellauth.com/product/solarclient" target="_blank" class="btn btn-primary"><i class="fas fa-shopping-cart"></i>Get Solar Client</a>
       <button class="btn btn-ghost" style="padding:14px 26px;font-size:0.95rem" onclick="openPreview()"><i class="fas fa-play"></i>Live Preview</button>
     </div>
     <div class="hero-checks">
@@ -540,7 +540,7 @@ footer{
     </div>
     <div class="stats-row">
       <div class="stat-card"><div class="stat-val" data-count="77" data-sfx="+">0</div><div class="stat-label">Modules</div></div>
-      <div class="stat-card"><div class="stat-val" data-count="50" data-sfx="K+">0</div><div class="stat-label">Downloads</div></div>
+      <div class="stat-card"><div class="stat-val" data-count="50" data-sfx="K+">0</div><div class="stat-label">Users</div></div>
       <div class="stat-card"><div class="stat-val" style="font-size:1.2rem;letter-spacing:-0.01em">1.21.1-11</div><div class="stat-label">MC Version</div></div>
       <div class="stat-card"><div class="stat-val">24/7</div><div class="stat-label">Support</div></div>
     </div>
@@ -610,25 +610,25 @@ footer{
   </div>
 </section>
 
-<!-- Download -->
-<section id="download">
+<!-- Purchase -->
+<section id="purchase">
   <div class="s-inner">
     <div class="dl-wrap r">
-      <h2 class="g-text">Ready to Dominate?</h2>
-      <p>Join 50,000+ players already running Solar Client on Donut SMP.</p>
+      <h2 class="g-text">Get Solar Client</h2>
+      <p>Join thousands of players dominating Donut SMP with Solar Client.</p>
       <div class="dl-btns">
-        <button class="btn-dl" onclick="downloadClient()">
-          <i class="fas fa-download" style="font-size:1.2rem"></i>
-          <div><span class="btn-label-top">Download for Minecraft</span><span class="btn-label-main">Solar Client</span></div>
-        </button>
+        <a href="https://novaclientx.mysellauth.com/product/solarclient" target="_blank" class="btn-dl">
+          <i class="fas fa-shopping-cart" style="font-size:1.2rem"></i>
+          <div><span class="btn-label-top">Purchase on SellAuth</span><span class="btn-label-main">Buy Solar Client</span></div>
+        </a>
         <a href="https://discord.gg/kJrQWEkueT" target="_blank" class="btn-ds">
           <i class="fab fa-discord" style="font-size:1.2rem"></i>
           <div><span class="btn-label-top">Join our</span><span class="btn-label-main">Discord Server</span></div>
         </a>
       </div>
       <div class="trust">
-        <span><i class="fas fa-shield-halved" style="color:#4ade80"></i>Virus Free</span>
-        <span><i class="fas fa-bolt" style="color:var(--blue)"></i>Optimised</span>
+        <span><i class="fas fa-lock" style="color:#4ade80"></i>Secure Checkout</span>
+        <span><i class="fas fa-bolt" style="color:var(--blue)"></i>Instant Access</span>
         <span><i class="fas fa-headset" style="color:var(--purple)"></i>24/7 Support</span>
       </div>
       <hr class="dl-divider">
@@ -746,14 +746,6 @@ function openPreview(){document.getElementById('previewModal').classList.add('ac
 function closePreview(){document.getElementById('previewModal').classList.remove('active');document.body.style.overflow=''}
 addEventListener('keydown',e=>{if(e.key==='Escape')closePreview()});
 document.getElementById('previewModal').addEventListener('click',function(e){if(e.target===this)closePreview()});
-
-/* ── Download ── */
-function downloadClient(){
-  const a=document.createElement('a');a.href='SolarClient.jar';a.download='SolarClient.jar';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);
-  toast('Starting download...','#22c55e');
-  setTimeout(()=>toast('Thanks! Join our Discord for support.','#6366F1'),1400);
-}
 
 /* ── Toast ── */
 function toast(msg,color){
